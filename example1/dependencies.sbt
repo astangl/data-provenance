@@ -4,7 +4,7 @@ libraryDependencies ++= Seq(
 
   "com.github.scopt"                  %% "scopt"                    % "3.7.1",
   "com.typesafe"                      %  "config"                   % "1.3.4",
-  "com.typesafe.scala-logging"        %% "scala-logging"            % "3.9.0",
+  "com.typesafe.scala-logging"        %% "scala-logging"            % "3.9.2",
   "ch.qos.logback"                    %  "logback-classic"          % "1.2.3"
 )
 
