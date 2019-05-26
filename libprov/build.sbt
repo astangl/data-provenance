@@ -7,7 +7,7 @@ scalaVersion := crossScalaVersions.value.head
 
 lazy val provenance = project.in(file(".")).configs(IntegrationTest)
 
-scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfatal-warnings" )
+scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfatal-warnings","-target:jvm-1.8" )
 
 // Test config
 fork in Test := true
