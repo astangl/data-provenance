@@ -2,7 +2,7 @@ organization := "com.cibo"
 name         := "provenance-all"
 licenses     += ("BSD Simplified", url("https://opensource.org/licenses/BSD-3-Clause"))
 
-crossScalaVersions := Seq("2.12.7")
+crossScalaVersions := Seq("2.12.8")
 scalaVersion := crossScalaVersions.value.head
 
 // NOTE: Each sub-project should be independently buildable w/o this parent build.sbt file.
