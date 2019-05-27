@@ -17,3 +17,4 @@ cache:
 
 script:
   - cd libprov && sbt ++$TRAVIS_SCALA_VERSION test
+
