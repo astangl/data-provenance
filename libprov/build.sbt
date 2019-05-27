@@ -2,12 +2,12 @@ organization := "com.cibo"
 name         := "provenance"
 licenses     += ("BSD Simplified", url("https://opensource.org/licenses/BSD-3-Clause"))
 
-crossScalaVersions := Seq("2.12.7")
+crossScalaVersions := Seq("2.12.8")
 scalaVersion := crossScalaVersions.value.head
 
 lazy val provenance = project.in(file(".")).configs(IntegrationTest)
 
-scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfatal-warnings")
+scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfatal-warnings","-target:jvm-1.8" )
 
 // Test config
 fork in Test := true

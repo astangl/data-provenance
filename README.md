@@ -1,5 +1,6 @@
 Data Provenance
 ===============
+[ ![Download](https://api.bintray.com/packages/cibotech/public/provenance/images/download.svg) ](https://bintray.com/cibotech/public/provenance/_latestVersion)
 
 This document describes the data-provenance library from the perspective of an application that uses it.
 
@@ -27,7 +28,7 @@ To start a new project quickly, copy the example1 project in this repository and
 
 For an existing project, add the following to `libraryDependencies` in the `.sbt` configuration: 
     
-    `"com.cibo" %% "provenance" % "0.11.1"`
+    `"com.cibo" %% "provenance" % "0.12.1"`
 
 Applications that use this library must also use `SbtBuildInfo` to reveal provide commit/build information to
 the provenance lib for new data generated.

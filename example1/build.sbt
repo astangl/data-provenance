@@ -2,10 +2,10 @@
 organization := "com.cibo"
 name         := "provenance-example1"
 
-crossScalaVersions := Seq("2.12.7", "2.11.12")
+crossScalaVersions := Seq("2.12.8")
 scalaVersion := crossScalaVersions.value.head
 
-scalacOptions ++= Seq("-unchecked", "-deprecation", "-Xfatal-warnings")
+scalacOptions ++= Seq("-unchecked", "-deprecation", "-Xfatal-warnings", "-target:jvm-1.8")
 
 fork in run := false
 mainClass in Compile := Some("com.cibo.provenance.examples.TrackMe")

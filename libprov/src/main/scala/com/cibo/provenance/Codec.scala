@@ -183,7 +183,7 @@ object Codec extends LazyLogging {
     val (objOrClass, suffix) = instanceAndSuffixFromNameAndSuffix(name, "")
     val obj = objOrClass match {
       case clazz: Class[_] =>
-        clazz.newInstance
+        clazz.getDeclaredConstructor().newInstance()
       case instance =>
         instance
     }
