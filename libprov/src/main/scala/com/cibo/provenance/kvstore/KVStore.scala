@@ -64,7 +64,7 @@ object KVStore {
   def apply(basePath: String)(implicit s3: AmazonS3 = S3Store.amazonS3): KVStore =
     basePath match {
       case p if p.startsWith("s3://") => new S3Store(p)(s3)
-      case p if p.startsWith("/") => new LocalStore(p)
+      case p if p.nonEmpty => new LocalStore(p)
       case other =>
         throw new RuntimeException(
           f"Failed to recognize $other as one of the default KVStore types!  " +
